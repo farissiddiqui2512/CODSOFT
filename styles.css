@@ -1,0 +1,181 @@
+/* Set a dark background color for the body */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header section with Flexbox */
+header {
+    background-color: #000;
+    text-align: center;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Style links with hover effects */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Create a container for sections with Flexbox */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Style the main content sections */
+/* Container for the section */
+.section-container {
+    display: flex;
+    flex-direction: row; /* Default direction, can be omitted */
+    align-items: stretch; /* Vertically center items */
+    margin: 20px;
+}
+
+/* Style for the paragraph on the left */
+.section-paragraph {
+    flex: 1; /* Allow paragraph to take available space */
+    padding: 20px; /* Add padding for spacing and readability */
+    background-color: #222; /* Background color for the paragraph area */
+    border-radius: 10px; /* Rounded corners for the paragraph area */
+    color: #fff; /* Text color */
+    font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+/* Style for the image on the right */
+.section-image {
+    flex: 1; /* Allow image to take available space */
+    height: 150px; /* Fixed height for the image */
+    margin-left: 20px; /* Spacing between the paragraph and image */
+}
+
+.section-image img {
+    width: 80%;
+    height: 250%;
+    object-fit:scale-down; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+
+/* Style the "Skills" section */
+#skills h2, #projects h2 {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Style the "Projects" section */
+.project {
+    margin-top: 20px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.project p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Style the "Resume" section */
+#resume a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#resume a:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Style the "Contact" section */
+#contact h2 {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Add some responsiveness */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about img {
+        max-width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    #projects img {
+        max-width: 100%;
+    }
+}
