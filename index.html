@@ -4,43 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>CODE CRAFTERS STUDIO</title>
+    <title>Basic Calculator</title>
 </head>
 <body>
-    <header>
-        <h1>CODE CRAFTERS STUDIO</h1>
-        <p>Crafting Digital Excellence</p>
-    </header>
-
-    <section id="features">
-        <div class="feature">
-            <h2>Programming Languages</h2>
-            <p> Proficiency in programming languages such as HTML, CSS, 
-                and JavaScript is fundamental for web development. Knowledge
-                 of additional languages and frameworks, like Python, PHP, React,
-                  or Angular, can be valuable depending on the specific role and 
-                  projects.</p>
+    <div class="calculator">
+        <div class="screen" id="display">0</div>
+        <div class="buttons">
+            <button onclick="clearScreen()">C</button>
+            <button onclick="appendToScreen('7')">7</button>
+            <button onclick="appendToScreen('8')">8</button>
+            <button onclick="appendToScreen('9')">9</button>
+            <button onclick="appendToScreen('/')">/</button>
+            <button onclick="appendToScreen('4')">4</button>
+            <button onclick="appendToScreen('5')">5</button>
+            <button onclick="appendToScreen('6')">6</button>
+            <button onclick="appendToScreen('*')">*</button>
+            <button onclick="appendToScreen('1')">1</button>
+            <button onclick="appendToScreen('2')">2</button>
+            <button onclick="appendToScreen('3')">3</button>
+            <button onclick="appendToScreen('-')">-</button>
+            <button onclick="appendToScreen('0')">0</button>
+            <button onclick="appendToScreen('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendToScreen('+')">+</button>
         </div>
-
-        <div class="feature">
-            <h2>Web Accessibility (a11y):</h2>
-            <p>Web accessibility involves designing and developing websites and applications that can be used effectively by people with disabilities. It involves creating web content that is perceivable, operable, and understandable for everyone, including those with visual, auditory, motor, or cognitive disabilities.  </p>
-        </div>
-
-        <div class="feature">
-            <h2>React.js</h2>
-            <p> React.js is a popular JavaScript library for building user interfaces. Learning React.js allows web developers to create interactive and dynamic web applications efficiently.</p>
-        </div>
-    </section>
-
-    <section id="cta">
-        <h2>Get Started Today</h2>
-        <p>Join us now for exclusive benefits!</p>
-        <a href="#" class="cta-button">Sign Up</a>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 CODE CRAFTERS STUDIO</p>
-    </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
